@@ -5,7 +5,7 @@ from utils import get_path
 path = get_path()
 img1 = Image.open(f"{path}/images/image1.jpg")
 img2 = Image.open(f"{path}/images/image2.jpg")
-num_steps = 5
+num_steps = 96
 
 if img1.size != img2.size:
     print('Las imágenes deben ser del mismo tamaño')

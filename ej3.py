@@ -12,9 +12,8 @@ def thread_process(start_step, end_step, img1, img2, num_steps):
     image.save(f"{path}/archives/shared/image-{step}.jpg")
     print(f"Imagen {step} generada, faltan {num_steps - step}")
 
-
-num_threads = int(input("Cantidad de hilos: "))
 path = get_path()
+num_threads = 4
 num_steps = 96
 
 img1 = np.array(Image.open(f"{path}/images/image1.jpg").convert('RGB'), dtype=np.uint8)
@@ -39,4 +38,4 @@ for thread in threads:
     # Bloquea la ejecución del hilo principal hasta que el hilo especificado termine. Esto asegura que el hilo principal espere hasta que el hilo hijo termine antes de continuar.
     thread.join()
 
-print(f"Imágenes guardadas en: {path}/archives/shared")
+print(f"Imagenes guardadas en: {path}/archives/shared")

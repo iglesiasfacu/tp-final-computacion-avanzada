@@ -54,4 +54,4 @@ for step in range(num_steps + 1):
         result_img = np.frombuffer(result_bytes, dtype=np.uint8).reshape((height, width, channels))
         Image.fromarray(result_img).save(f"{path}/archives/distributed/image-{step}.jpg")
         print(f"Imagen {step} generada, faltan {num_steps - step}")
-print(f"Imágenes guardadas en: {path}/archives/distributed")
+print(f"Imagenes guardadas en: {path}/archives/distributed")
