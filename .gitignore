@@ -1,0 +1,4 @@
+__pycache__
+archives/distributed/*
+archives/sequential/*
+archives/shared/*
