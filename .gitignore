@@ -1,5 +1,5 @@
 __pycache__
-archives/distributed/*
-archives/sequential/*
-archives/shared/*
+archives/distributed/*.jpg
+archives/sequential/*.jpg
+archives/shared/*.jpg
 *.mp4
