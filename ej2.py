@@ -12,10 +12,10 @@ path = get_path()
 num_steps = 96
 
 if task_id == 0:
-    img1 = np.array(Image.open(f"{path}/images/image1.jpg").convert('RGB'), dtype=np.uint8)
-    img2 = np.array(Image.open(f"{path}/images/image2.jpg").convert('RGB'), dtype=np.uint8)
-    # img1 = np.array(Image.open(f"{path}/images/image1-800x800.jpg").convert('RGB'), dtype=np.uint8)
-    # img2 = np.array(Image.open(f"{path}/images/image2-800x800.jpg").convert('RGB'), dtype=np.uint8)
+    # img1 = np.array(Image.open(f"{path}/images/image1.jpg").convert('RGB'), dtype=np.uint8)
+    # img2 = np.array(Image.open(f"{path}/images/image2.jpg").convert('RGB'), dtype=np.uint8)
+    img1 = np.array(Image.open(f"{path}/images/image1-800x800.jpg").convert('RGB'), dtype=np.uint8)
+    img2 = np.array(Image.open(f"{path}/images/image2-800x800.jpg").convert('RGB'), dtype=np.uint8)
     # img1 = np.array(Image.open(f"{path}/images/image1-2000x2000.jpg").convert('RGB'), dtype=np.uint8)
     # img2 = np.array(Image.open(f"{path}/images/image2-2000x2000.jpg").convert('RGB'), dtype=np.uint8)
     # img1 = np.array(Image.open(f"{path}/images/image1-5000x5000.jpg").convert('RGB'), dtype=np.uint8)
